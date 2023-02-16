@@ -2,20 +2,26 @@ import java.util.Scanner;
 
 public class Nuclear {
     public static void main(String[] args) {
-        Scanner scannerObj = new Scanner(System.in);
 
-        System.out.println("What is the name of supervisor?");
-        String name = scannerObj.nextLine();
+        Scanner nuclearObj = new Scanner(System.in);
         System.out.println("What is the total number of employees?");
-        int numEmployees = scannerObj.nextInt();
+        int numEmployees = nuclearObj.nextInt();
+
+        Scanner nuclearObj1 = new Scanner(System.in);
+        System.out.println("What is the name of supervisor?");
+        String name = nuclearObj1.nextLine();
+
         System.out.println("How many times the Nuclear waste is removed from the core?");
-        int numRemoved = scannerObj.nextInt();
+        int numRemoved = nuclearObj.nextInt();
+
         System.out.println("What is the total weight of the waste produced every 1 week?");
-        float wasteWeight = scannerObj.nextFloat();
+        float wasteWeight = nuclearObj.nextFloat();
+
         System.out.println("Is Electric Motor being replaced every 18 days? Press y for yes and n for no:");
-        char yn = scannerObj.next().charAt(0);
+        char yn = nuclearObj.next().charAt(0);
+        
         System.out.println("What is the core average temperature (celsius) of the Nuclear Reactor? ");
-        float avgTemp = scannerObj.nextFloat();
+        float avgTemp = nuclearObj.nextFloat();
 
         System.out.println("Total number of employees: " + numEmployees);
         System.out.println("Name of supervisor is: " + name);
