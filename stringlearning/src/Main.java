@@ -3,7 +3,7 @@ public class Main {
 
         //immutable
         String str1 = "Hello";
-//        String str2 = "Hello";
+//        str1 = "Anu";
         String str2 = new String("Hello");
         System.out.println(str1.equals(str2));
 
