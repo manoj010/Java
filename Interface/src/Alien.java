@@ -1,5 +1,5 @@
 public interface Alien {
-    public void name();
-    public void species();
-    public void planet();
+    void name();
+    void species();
+    void planet();
 }
