@@ -22,19 +22,19 @@ public class Question1 {
                 break;
 
             case 3:
-                    int a = 0;
-                    int b = 1;
-                    int c;
-                    Scanner input2 = new Scanner(System.in);
-                    System.out.println("Enter n numbers: ");
-                    int upto = input2.nextInt();
-                    System.out.print(a + " ," + b);
-                    for (int i = 3; i <= upto; i++) {
-                        c = a + b;
-                        a = b;
-                        b = c;
-                        System.out.print(" ," + c);
-                    }
+                int a = 0;
+                int b = 1;
+                int c;
+                Scanner input2 = new Scanner(System.in);
+                System.out.println("Enter n numbers: ");
+                int upto = input2.nextInt();
+                System.out.print(a + " ," + b);
+                for (int i = 3; i <= upto; i++) {
+                    c = a + b;
+                    a = b;
+                    b = c;
+                    System.out.print(" ," + c);
+                }
                 break;
 
             default:
