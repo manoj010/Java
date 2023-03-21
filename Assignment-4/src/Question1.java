@@ -16,9 +16,9 @@ public class Question1 {
                 break;
 
             case 2:
-                System.out.println("Enter value (NPR): ");
+                System.out.println("Enter value (USD): ");
                 double value = input.nextDouble();
-                System.out.println(value + " NPR" + "  =  " + value * 135.03 + " USD");
+                System.out.println(value + " USD" + "  =  " + value * 135.03 + " NPR");
                 break;
 
             case 3:
