@@ -4,7 +4,7 @@ public class GameRender {
     Box box = new Box();
     GameRender() {
         frame.add(box);
-        frame.setSize(400, 700);
+        frame.setSize(400, 600);
 //        frame.setLayout(null);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
