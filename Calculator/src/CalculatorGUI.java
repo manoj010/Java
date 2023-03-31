@@ -9,6 +9,8 @@ public class CalculatorGUI implements ActionListener {
     JTextField t3 = new JTextField();
     JButton add = new JButton("Add");
     JButton sub = new JButton("Sub");
+    JButton mul = new JButton("Multiply");
+    JButton div = new JButton("Divide");
 
     void renderForm() {
         t1.setBounds(10, 10, 100, 30);
@@ -27,6 +29,16 @@ public class CalculatorGUI implements ActionListener {
         sub.addActionListener(this);
         sub.setFocusable(false);
         frame.add(sub);
+
+        mul.setBounds(10, 180, 100, 30);
+        mul.addActionListener(this);
+        mul.setFocusable(false);
+        frame.add(mul);
+
+        div.setBounds(10, 220, 100, 30);
+        div.addActionListener(this);
+        div.setFocusable(false);
+        frame.add(div);
     };
     void render() {
         renderForm();
@@ -45,9 +57,15 @@ public class CalculatorGUI implements ActionListener {
         if(e.getSource() == add) {
             int sum = num1 + num2;
             t3.setText(String.valueOf(sum));
-        } else {
+        } else if(e.getSource() == sub){
             int sub = num1 - num2;
             t3.setText(String.valueOf(sub));
+        } else if(e.getSource() == mul){
+            int mul = num1 * num2;
+            t3.setText(String.valueOf(mul));
+        } else {
+            int div = num1 * num2;
+            t3.setText(String.valueOf(div));
         }
     }
 }
