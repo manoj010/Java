@@ -1,5 +1,4 @@
 import java.io.*;
-
 public class Main {
     public static void main(String[] args) throws IOException {
         File file = new File("test.txt");
@@ -13,6 +12,8 @@ public class Main {
         fileWriter.write("This is a test.\n");
         fileWriter.write("This is a test.\n");
         fileWriter.write("This is a test.\n");
+        fileWriter.write("This is a test.\n");
+
         fileWriter.close();
 
         try {
