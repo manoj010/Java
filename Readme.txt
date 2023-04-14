@@ -1,1 +1,1 @@
-All the Java projects till now.
+All the Java projects.
