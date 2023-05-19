@@ -7,7 +7,7 @@ public class HelloServant extends UnicastRemoteObject implements HelloService {
     }
 
     @Override
-    public String printMessage() throws RemoteException {
-        return "Hello World!";
+    public String add(int x, int y) throws RemoteException {
+        return ("Sum = " + (x + y));
     }
 }
